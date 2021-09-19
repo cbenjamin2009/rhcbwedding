@@ -307,7 +307,6 @@ backdrop-filter: blur(3.3px);
 .flexHotel--card {
   padding: 20px;
   margin: 10px;
-  min-width: 300px;
   height: auto;
   background: rgba(100, 97, 97, 0.17);
   border-radius: 16px;
@@ -429,6 +428,13 @@ background: rgba(236, 228, 228, 0.17);
 }
 .navContainer {
   margin-left: 2%;
+}
+
+.rsvpDiv{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 }
