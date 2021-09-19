@@ -1,38 +1,434 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Satisfy&display=swap');
+
+
+root {
+  --main-font: 'Satisfy', cursive;
+  --secondary-font: 'Hina Mincho', serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("./Images/background_image.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Nav Section */
+
+
+.navContainer {
+  margin-left: 25%;
+  margin-right: 2%;
+  height:  auto;
+/* From https://css.glass */
+background: rgba(236, 228, 228, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(3.3px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navList {
+  margin-right: 2%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.navList li {
+  margin-top: .5em;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.nav-Link{
+  text-decoration: none;
+  color:rgb(110, 0, 0);
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  font-size: 3em;
+}
+
+li .active {
+  color:rgba(0, 0, 110, 1);
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: .2em;
+}
+
+/* Header Section */
+.flexHeader{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+
+.header {
+  background: rgba(236, 228, 228, 0.17);
+  margin-top: 2%;
+  width: 50vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  
+}
+
+.headerImage{
+  transform: translateY(5em);
+  height: 30em;
+  width: 30em;
+  border-radius: 50%;
+}
+
+.headingTitleh1{
+  font-size: 2em;
+}
+
+.headingTitleh3{
+  font-size: 1em;
+}
+
+.headerImage--div{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  text-align: center;
+  font-size: 3em;
+  color: rgb(110, 0, 0);
+  font-family: var(--main-font);
+  text-shadow: 1px 1px 1px rgb(255,255,255);
+}
+
+/* Countdown Section (Ticker) */
+.tickParent{
+  color: white;
+  padding-top: 40px; 
+  padding-bottom: 40px;
+  margin-top: 10%;
+  position: relative;
+/* From https://css.glass */
+background: rgba(236, 228, 228, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(3.3px);
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  min-width: 40vw;
+  text-align: center;
+  font-size: 3em;
+  font-family: var(--secondary-font);
+}
+
+
+
+.tickLabels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: space-evenly;
+  font-size: .7em;
+  
+}
+
+
+
+/* .tick-flip {
+  margin-left: .6em !important;
+  margin-right: .6em !important;
+  min-width: fit-content !important;
+  overflow: hidden;
+} */
+
+
+
+/* Registry Section */
+.registry--div{
+  color: white;
+  position: relative;
+  margin-top: 10%;
+  width: 70vw;
+  height: auto;
+  padding: 2em 0 2em 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+/* From https://css.glass */
+background: rgba(236, 228, 228, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(3.3px);
+}
+
+.registry--div p {
+  font-size: 1.3em;
+  font-family: var(--secondary-font);
+}
+
+.registryList{  
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 30%;
+margin-right: 20%;
+justify-content: space-between;
+}
+
+.registryList li {
+  margin-top: 1.5em;
+  list-style: none;
+  list-style-type: none;
+}
+
+.regLink{
+  position: relative;
+  font-size: 5em;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.target{
+  color: #CC0000
+}
+
+.sectionTitle{
+  font-size: 2em;
+
+}
+
+/* Venue Section */
+
+.venueContainer{
+/* From https://css.glass */
+background: rgba(236, 228, 228, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(3.3px);
+  width: 70vw;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 3em;
+  margin-right: auto;
+  padding: 1em 2em 1em 2em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sectionTitle{
+  font-family: var(--secondary-font);
+  font-style: italic;
+  font-size: 3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.venueImage{
+  border-radius: 2em;
+  font-family: var(--secondary-font);
+}
+
+.venueInfo{
+  max-width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  font-weight: 700;
+ 
+}
+
+.venueLocation--div{
+  font-size: 2em;
+  padding: 1em;
+  color: #FFF;
+}
+
+.map{
+  width: 50vw;
+  height: 50vh;
+  margin-bottom: 5vh;
+}
+
+/* Hotels Section */
+
+.hotelsContainer{
+  display: grid;
+
+  margin-top: 5em;
+  color: white;
+  text-align: center;
+  font-family: var(--secondary-font);
+  width: 70vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(236, 228, 228, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  padding: 1em 2em 1em 2em;
+}
+
+.hotelsContainer h3 {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.flexContainer {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 20vw));
+  grid-gap: 10px;
+}
+
+.flexHotel--card {
+  padding: 20px;
+  margin: 10px;
+  min-width: 300px;
+  height: auto;
+  background: rgba(100, 97, 97, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+}
+
+.hotelPicture{
+  border-radius: 5%;
+}
+
+.cardLogo {
+  height: 100px;
+  max-width: 250px;
+  width: auto;
+  border-radius: 5%;
+}
+
+.cardLink{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.mapLink:hover{
+  background-color: #00CFFF;
+  cursor: pointer;
+}
+
+.mapLink {
+  padding: 10px 20px 10px 20px;
+  border-start-end-radius: 10px;
+  border-end-start-radius: 10px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+  
+}
+
+
+
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-evenly;
+}
+
+/* RSVP Section */
+.rsvpDiv{
+margin-top: 40px;
+margin-left: auto;
+margin-right: auto;
+width: 50vw;
+background: rgba(236, 228, 228, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+}
+
+.rsvpDiv .sectionTitle{
+  text-align: center;
+  color: white;
+
+}
+
+
+/* Footer section */
+
+.footerText{
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+  padding: 2%;
+  background: rgba(236, 228, 228, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+}
+
+.footerLink{
+  color: inherit;
+  text-decoration: none;
+}
+
+.footerImage{
+  width: 200px;
+  height: 75px;
+  transform: translateY(25px);
+}
+
+
+
+
+/* Media Queries for different screen sizes */
+
+@media screen and (min-width: 960px){
+  .tick-flip {
+    margin-left: .6em !important;
+    margin-right: .6em !important;
+    min-width: fit-content !important;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+@media (max-width: 960px){
+  html {
+    font-size: 50%;
+}
+.navContainer {
+  margin-left: 2%;
+}
+
 }
