@@ -420,6 +420,9 @@ background: rgba(236, 228, 228, 0.17);
     min-width: fit-content !important;
     overflow: hidden;
   }
+  rsvpDiv{
+    width: 100vw;
+  }
 }
 
 @media (max-width: 960px){
@@ -435,6 +438,17 @@ background: rgba(236, 228, 228, 0.17);
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.flexContainer {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(100vw, 100vw));
+  grid-gap: 10px;
 }
 
 }
