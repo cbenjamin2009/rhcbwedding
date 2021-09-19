@@ -53,7 +53,7 @@ function Nav() {
         <div className="navContainer">
             <ul className="navList">
                 <li>
-                    <a id="nav-link-home" href={'/'} className="nav-Link active" onClick={() => setActive('Home')}> Home</a>
+                    <a id="nav-link-home" href={'/rhcbwedding/'} className="nav-Link active" onClick={() => setActive('Home')}> Home</a>
                 </li>
                 <li>
                     <a id="nav-link-registry" href='#registry' className="nav-Link" onClick={() => setActive('Registry')} > Registry</a>
