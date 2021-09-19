@@ -62,7 +62,7 @@ function Nav() {
                     <a id="nav-link-venue" href='#venueTitle' className="nav-Link" onClick={() => setActive('Venue')}> Venue</a>
                 </li>
                 <li>
-                    <a id="nav-link-hotels" href='#hotels' className="nav-Link" onClick={() => setActive('Hotels')}> Places to Stay</a>
+                    <a id="nav-link-hotels" href='#hotels' className="nav-Link" onClick={() => setActive('Hotels')}> Hotels</a>
                 </li>
                 <li>
                     <a id="nav-link-rsvp" href='#rsvp' className="nav-Link" onClick={() => setActive('RSVP')}> RSVP</a>
