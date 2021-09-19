@@ -271,7 +271,6 @@ backdrop-filter: blur(3.3px);
 
 .hotelsContainer{
   display: grid;
-
   margin-top: 5em;
   color: white;
   text-align: center;
@@ -441,6 +440,7 @@ background: rgba(236, 228, 228, 0.17);
 }
 
 .flexContainer {
+  width: 90vw;
   /* display: flex;
   flex-direction: row;
   flex-wrap: wrap; */
@@ -449,6 +449,14 @@ background: rgba(236, 228, 228, 0.17);
   align-content: center;
   grid-template-columns: repeat(auto-fill, minmax(100vw, 100vw));
   grid-gap: 10px;
+}
+
+.venueContainer{
+  width: 90vw;
+}
+
+.hotelsContainer{
+  width: 90vw;
 }
 
 }
