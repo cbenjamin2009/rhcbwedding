@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/rhcbwedding/static/css/main.9d850f95.chunk.css",
+    "main.js": "/rhcbwedding/static/js/main.ee00bc27.chunk.js",
+    "main.js.map": "/rhcbwedding/static/js/main.ee00bc27.chunk.js.map",
+    "runtime-main.js": "/rhcbwedding/static/js/runtime-main.ebb3b71a.js",
+    "runtime-main.js.map": "/rhcbwedding/static/js/runtime-main.ebb3b71a.js.map",
+    "static/css/2.da126cf0.chunk.css": "/rhcbwedding/static/css/2.da126cf0.chunk.css",
+    "static/js/2.d044898c.chunk.js": "/rhcbwedding/static/js/2.d044898c.chunk.js",
+    "static/js/2.d044898c.chunk.js.map": "/rhcbwedding/static/js/2.d044898c.chunk.js.map",
+    "index.html": "/rhcbwedding/index.html",
+    "static/css/2.da126cf0.chunk.css.map": "/rhcbwedding/static/css/2.da126cf0.chunk.css.map",
+    "static/css/main.9d850f95.chunk.css.map": "/rhcbwedding/static/css/main.9d850f95.chunk.css.map",
+    "static/js/2.d044898c.chunk.js.LICENSE.txt": "/rhcbwedding/static/js/2.d044898c.chunk.js.LICENSE.txt",
+    "static/media/PressRoom_Logo.d71d98b9.jpg": "/rhcbwedding/static/media/PressRoom_Logo.d71d98b9.jpg",
+    "static/media/Website_Logo.0e3c532d.png": "/rhcbwedding/static/media/Website_Logo.0e3c532d.png",
+    "static/media/App.css": "/rhcbwedding/static/media/background_image.26afd736.jpg",
+    "static/media/couple_image.ef9682c2.jpg": "/rhcbwedding/static/media/couple_image.ef9682c2.jpg",
+    "static/media/holiday_inn.1cb12377.png": "/rhcbwedding/static/media/holiday_inn.1cb12377.png",
+    "static/media/holiday_inn_image.1401d2d4.jpg": "/rhcbwedding/static/media/holiday_inn_image.1401d2d4.jpg",
+    "static/media/hotelmurano.c5e719fc.svg": "/rhcbwedding/static/media/hotelmurano.c5e719fc.svg",
+    "static/media/mcmenamins.b3eb1420.png": "/rhcbwedding/static/media/mcmenamins.b3eb1420.png",
+    "static/media/mcmenamins_image.c10a482f.jpg": "/rhcbwedding/static/media/mcmenamins_image.c10a482f.jpg",
+    "static/media/murano_image.f270f3a3.jpg": "/rhcbwedding/static/media/murano_image.f270f3a3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ebb3b71a.js",
+    "static/css/2.da126cf0.chunk.css",
+    "static/js/2.d044898c.chunk.js",
+    "static/css/main.9d850f95.chunk.css",
+    "static/js/main.ee00bc27.chunk.js"
+  ]
+}
