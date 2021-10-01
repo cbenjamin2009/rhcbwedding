@@ -20,13 +20,11 @@ function Nav() {
         break;
     case 'Venue':
         cleanup();
-
         nav = document.getElementById('nav-link-venue')
         nav.classList.add('active');
         break;
     case 'Hotels':
         cleanup();
-
         nav = document.getElementById('nav-link-hotels')
         nav.classList.add('active');
         break;
