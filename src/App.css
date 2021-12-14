@@ -137,6 +137,19 @@ backdrop-filter: blur(3.3px);
   font-family: var(--secondary-font);
 }
 
+.tickSubTitleRed{
+  color: rgb(102, 17, 17) !important;
+  font-weight: 700;
+}
+
+.tickSubTitle {
+  font-weight: 700;
+}
+
+tickSubTitleWhite{
+  font-weight: 700;
+  color: white;
+}
 
 
 .tickLabels {

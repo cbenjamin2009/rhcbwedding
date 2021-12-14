@@ -51,7 +51,8 @@ const Countdown  = ({ value }) => {
   return (
       <div className="tickParent">
           <span className="tickTitle">January 29th, 2022</span>
-          <br/><span className="tickSubTitle">Time: 3:00PM</span>
+          <br/><span className="tickSubTitleRed">Updated </span><span className="tickSubtitle">Ceremony Begins: 11:00AM</span>
+          <br/><span className="tickSubTitleWhite">Please arrive by 10:30am</span>
     <div ref={divRef} className="tick">
       <div className="tick-flip" data-repeat="true">
         <span className="tickFlip" data-view="flip"/>
